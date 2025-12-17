@@ -41,7 +41,7 @@ const AppContent = () => {
     <div className='relative min-h-screen bg-zinc-800 text-white'>
       <Navbar />
       <header className="flex items-center flex-col py-10">
-        <h2 className='text-5xl mb-8 font-extrabold tracking-wide'>Props Learning Project</h2>
+        <h1 className='text-5xl mb-8 font-extrabold tracking-wide'>Props Learning Project</h1>
         <p className="text-lg font-bold mb-3">A comprehensive props learning project in react</p>
         <small className="text-sm font-semibold tracking-wide">Built with NPM + Vite + React + Tailwind CSS</small>
       </header>

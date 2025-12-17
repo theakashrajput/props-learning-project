@@ -5,8 +5,8 @@ const BasicProps = () => {
     const [count, setCount] = useState(0)
     return (
         <section id='basic' className='bg-white text-black rounded-xl shadow-lg py-6 px-8'>
-            <h3 className='text-3xl font-bold mb-2 text-gray-800'>Basic Props</h3>
-            <p className='text-sm text-gray-400 font-semibold tracking-wide'>Props are argument passed to React components. They allow you to pass data to child components.</p>
+            <h2 className='text-3xl font-bold mb-2 text-gray-800'>Basic Props</h2>
+            <p className='tracking-wide text-gray-600'>Props are argument passed to React components. They allow you to pass data to child components.</p>
 
             <div className='mt-6'>
                 <h4 className='text-lg font-bold'>Deferent Colors</h4>

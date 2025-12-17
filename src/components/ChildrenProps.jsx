@@ -35,8 +35,9 @@ const Card = ({ children, title, color }) => {
 const ChildrenProps = () => {
     return (
         <section id="children" className='bg-white text-black rounded-xl shadow-lg py-6 px-8'>
-            <p className="mb-6">The {" "}
-                <code className="bg-gray-200 px-2 py-1 rounded-sm">children</code>
+            <h2 className='text-3xl font-bold mb-2 text-gray-800'>Children Props</h2>
+            <p className="mb-6 mt-4 text-gray-600">The {" "}
+                <code className="bg-gray-200 px-2 py-1 rounded-sm text-black">children</code>
                 {" "}prop allow you to pass JSX elements or components as children to other components, enabling components composition.
             </p>
 
