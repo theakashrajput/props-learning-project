@@ -2,7 +2,8 @@ import BasicProps from "./components/BasicProps";
 import ChildrenProps from "./components/ChildrenProps";
 import ComplexProps from "./components/ComplexProps";
 import RefProps from "./components/RefProps";
-import ThemeToggler from "./components/ThemeToggler";
+import ThemeProvider from "./Context/ThemeContext";
+import ThemeToggler from "./components/ThemeToggler"; 
 
 const Navbar = () => {
   const isDarkTheme = true;
@@ -61,7 +62,9 @@ const AppContent = () => {
 
 const App = () => {
   return (
-    <AppContent />
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   )
 }
 

@@ -2,8 +2,6 @@ import { useState } from "react";
 
 
 const ProfileCard = ({ user, theme, actions }) => {
-
-
   const { name, email, avatar, role, status, stats } = user;
 
   return (
