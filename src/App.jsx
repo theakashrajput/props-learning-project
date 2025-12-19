@@ -2,8 +2,9 @@ import BasicProps from "./components/BasicProps";
 import ChildrenProps from "./components/ChildrenProps";
 import ComplexProps from "./components/ComplexProps";
 import RefProps from "./components/RefProps";
-import ThemeProvider from "./Context/ThemeContext";
-import ThemeToggler from "./components/ThemeToggler"; 
+import ThemeProvider, { ThemeContext } from "./Context/ThemeContext";
+import ThemeToggler from "./components/ThemeToggler";
+import { useContext } from "react";
 
 const Navbar = () => {
   const isDarkTheme = true;
@@ -38,6 +39,9 @@ const Navbar = () => {
 }
 
 const AppContent = () => {
+
+  const { isDark } = useContext(ThemeContext);
+
   return (
     <div className='relative min-h-screen bg-zinc-800 text-white'>
       <Navbar />
@@ -53,8 +57,13 @@ const AppContent = () => {
         <RefProps />
         <ThemeToggler />
       </main>
-      <footer>
-        <p>Build with 💗 and happiness and learnings.</p>
+      <footer
+        className={`mt-12 text-center pb-8 transition-colors ${isDark ? "text-gray-400" : "text-gray-200"
+          }`}
+      >
+        <p className="text-sm">
+          Made with ❤️ using Bun, Vite, React, and Tailwind CSS
+        </p>
       </footer>
     </div>
   )

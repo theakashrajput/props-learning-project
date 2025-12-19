@@ -72,7 +72,7 @@ function ThemedButton({ children, variant = "primary", onClick }) {
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-2 rounded-lg font-medium transition-colors ${getButtonClasses()}`}
+      className={`px-4 py-2 rounded-lg font-medium duration-200 ease-in cursor-pointer transition-all active:scale-95  ${getButtonClasses()}`}
     >
       {children}
     </button>
